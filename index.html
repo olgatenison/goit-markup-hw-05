@@ -51,7 +51,11 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-btn btn"type="button">Заказать услугу</button>
+                <button class="hero-btn btn"
+                data-modal-open
+                type="button">
+                Заказать услугу
+                </button>
             </div>
         </section>
        <!--преимущества-->
@@ -122,10 +126,16 @@
                         </div>
                     </li>
                     <li class="gallery-item">
-                        <img src="./images/box2.jpg" alt="дизайнер делает макет" width="370"/>
+                        <div class="gallery-top-wrapper">
+                            <img src="./images/box2.jpg" alt="дизайнер делает макет" width="370"/>
+                            <p class="gallery-top-txt">мобильные приложения</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
-                        <img src="./images/box3.jpg" alt="дизайнер подбирает цвет" width="370"/>
+                        <div class="gallery-top-wrapper">
+                            <img src="./images/box3.jpg" alt="дизайнер подбирает цвет" width="370"/>
+                            <p class="gallery-top-txt">дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -416,9 +426,11 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="close-btn">
+            <button type="button" 
+            data-modal-close 
+            class="close-btn">
                 <svg class="close-btn-icon">
                     <use href="./images/sprite.svg#icon-close-black">
                     </use>
@@ -426,5 +438,6 @@
             </button>
         </div>
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
