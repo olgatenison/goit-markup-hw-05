@@ -506,8 +506,8 @@ body {
     position: relative;
     overflow: hidden;
 }
-.portfolio-product-item:hover .product-top-txt,
-.portfolio-product-item:focus .product-top-txt{
+.portfolio-link:hover .product-top-txt,
+.portfolio-link:focus .product-top-txt{
     transform:translateY(0);
 }
 .product-top-txt{
